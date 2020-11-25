@@ -1,0 +1,21 @@
+app:
+  listen: 0.0.0.0:8080
+  read_timeout: 10s
+  write_timeout: 10s
+  shutdown_timeout: 15s
+  db_type: mariadb
+
+logging:
+  level: debug
+  output:
+    - stdout
+    - app.log
+
+boltdb:
+  filename: expenses.db
+
+mariadb:
+  url: user:password@tcp(127.0.0.1:3306)/expenses
+  max_open_connections: 100
+  max_idle_connections: 10
+  conn_max_lifetime: 120s
