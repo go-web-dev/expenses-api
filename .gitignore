@@ -2,3 +2,4 @@ app.log
 expenses.db
 .idea/
 vendor/
+.coverage/

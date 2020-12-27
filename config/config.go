@@ -78,7 +78,7 @@ func (m *Manager) AppShutdownTimeout() time.Duration {
 	return m.CfgReader.GetDuration(appShutdownTimeout)
 }
 
-// AppShutdownTimeout retrieves the application server shutdown timeout from configuration file
+// AppDBType retrieves the application db type from configuration file
 func (m *Manager) AppDBType() string {
 	return m.CfgReader.GetString(appDBType)
 }
@@ -98,7 +98,7 @@ func (m *Manager) MariaDBUrl() string {
 	return m.CfgReader.GetString(mariaDBURL)
 }
 
-// DBMaxOpenConnections retrieves the mysql database amount of max open connections
+// MariaDBMaxOpenConnections retrieves the mysql database amount of max open connections
 func (m *Manager) MariaDBMaxOpenConnections() int {
 	return m.CfgReader.GetInt(mariaDBMaxOpenConnections)
 }

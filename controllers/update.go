@@ -23,7 +23,7 @@ func updateExpense(service expenseUpdater) http.Handler {
 			transport.SendHTTPError(w, err)
 			return
 		}
-		if err := req.Validate(); err != nil {
+		if err = req.Validate(); err != nil {
 			transport.SendHTTPError(w, err)
 			return
 		}

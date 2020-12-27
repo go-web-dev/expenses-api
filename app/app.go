@@ -18,6 +18,7 @@ import (
 	"github.com/steevehook/expenses-rest-api/services"
 )
 
+// App represents the application struct instance
 type App struct {
 	stopOnce sync.Once
 	Server   *http.Server
@@ -31,7 +32,7 @@ func Init(configPath string) (*App, error) {
 	if err != nil {
 		return nil, fmt.Errorf("could not initialize app config: %v", err)
 	}
-	if err := logging.Init(configManager); err != nil {
+	if err = logging.Init(configManager); err != nil {
 		return nil, fmt.Errorf("could not initialize logger: %v", err)
 	}
 

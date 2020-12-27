@@ -9,6 +9,7 @@ type Closer interface {
 	Close() error
 }
 
+// Expenses represents the Expenses repository interface
 type Expenses interface {
 	GetAllExpenses(page, size int) ([]models.Expense, error)
 	GetExpensesByIDs(ids []string) ([]models.Expense, error)

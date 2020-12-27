@@ -22,6 +22,7 @@ type CreateExpenseRequest struct {
 	Currency string  `json:"currency"`
 }
 
+// Validate validates the create expense incoming request
 func (r CreateExpenseRequest) Validate() error {
 	return validateExpenseReqBody(r.Title, r.Currency, r.Price, false)
 }
@@ -34,6 +35,7 @@ type UpdateExpenseRequest struct {
 	Currency string  `json:"currency"`
 }
 
+// Validate validates the update expense incoming request
 func (r UpdateExpenseRequest) Validate() error {
 	return validateExpenseReqBody(r.Title, r.Currency, r.Price, true)
 }

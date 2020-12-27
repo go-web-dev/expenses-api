@@ -14,6 +14,7 @@ const (
 	idsRouteParam = "ids"
 )
 
+// ExpensesService represents the Expenses service interface
 type ExpensesService interface {
 	allExpensesGetter
 	expensesByIDsGetter
@@ -22,15 +23,17 @@ type ExpensesService interface {
 	expenseDeleter
 }
 
+// AuthenticationService represents the Authentication service interface
 type AuthenticationService interface {
 	loginner
 	signupper
 	logoutter
 }
 
+// RouterConfig represents the application router config
 type RouterConfig struct {
 	ExpensesSvc ExpensesService
-	AuthSvc	AuthenticationService
+	AuthSvc     AuthenticationService
 }
 
 // NewRouter creates a new application HTTP router
