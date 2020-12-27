@@ -1,5 +1,9 @@
 # Expenses REST API in Go
 
+[![Build Status](https://travis-ci.com/go-web-dev/expenses-api.svg?branch=master)](https://travis-ci.com/go-web-dev/expenses-api)
+[![codecov](https://codecov.io/gh/go-web-dev/expenses-api/branch/master/graph/badge.svg)](https://codecov.io/gh/go-web-dev/expenses-api)
+[![Go Report Card](https://goreportcard.com/badge/github.com/go-web-dev/expenses-api)](https://goreportcard.com/report/github.com/go-web-dev/expenses-api)
+
 This application is a fully featured REST API written in Go
 
 ### Technologies used:
@@ -7,23 +11,6 @@ This application is a fully featured REST API written in Go
 - Golang
 - MariaDB
 - BoltDB
-
-### Coding Parts
-
-#### Part 1 (...)
-[Download]()
-
-#### Part 2 (...)
-[Download]()
-
-#### Part 3 (...)
-[Download]()
-
-#### Part 4 (...)
-[Download]()
-
-#### Part 5 (...)
-[Download]()
 
 #### Expense Model
 
